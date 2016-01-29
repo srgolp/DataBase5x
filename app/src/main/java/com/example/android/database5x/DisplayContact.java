@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,7 +21,7 @@ import android.widget.Toast;
 /**
  * Created by srico on 22/01/2016.
  */
-public class DisplayContact extends Activity
+public class DisplayContact extends AppCompatActivity
 {
     int from_Where_I_Am_Coming = 0;
     private DBHelper mydb;
@@ -89,8 +90,6 @@ public class DisplayContact extends Activity
                 place.setClickable(false);
             }
         }
-
-
     }
 
     @Override
