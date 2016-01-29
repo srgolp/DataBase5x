@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.android.database5x.DisplayContact">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".DisplayContact" >
+    tools:context="com.example.android.database5x.MainActivity" >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="370dp"
@@ -12,17 +32,19 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
+
         <EditText
             android:id="@+id/editTextName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="82dp"
+            android:layout_marginTop="5dp"
             android:ems="10"
             android:inputType="text" >
             <requestFocus />
         </EditText>
+
         <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="wrap_content"
@@ -41,6 +63,7 @@
             android:layout_alignParentLeft="true"
             android:text="@string/name"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -50,6 +73,16 @@
             android:layout_marginBottom="28dp"
             android:onClick="run"
             android:text="@string/save" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextEmail"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="@string/email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
@@ -58,6 +91,7 @@
             android:layout_alignLeft="@+id/textView1"
             android:text="@string/phone"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
@@ -97,6 +131,7 @@
             android:ems="10"
             android:inputType="text" >
         </EditText>
+
         <EditText
             android:id="@+id/editTextPhone"
             android:layout_width="wrap_content"
@@ -105,5 +140,8 @@
             android:layout_below="@+id/editTextName"
             android:ems="10"
             android:inputType="phone|text" />
+
     </RelativeLayout>
+
 </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

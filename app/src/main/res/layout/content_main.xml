@@ -36,6 +36,14 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"/>
         <!--android:src="@drawable/logo"-->
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+    </ListView>
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,12 +54,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" >
-        </ListView>
+
     </ScrollView>
 </RelativeLayout>
